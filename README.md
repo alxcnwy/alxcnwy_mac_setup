@@ -4,7 +4,7 @@ Everything I need to set up a new mac.
 
 Constantly evolving
 
-https://twitter.com/alxcnwy
+Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 
 # Apps
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
@@ -46,12 +46,26 @@ copy `dotfiles/.zshrc` into `~`
 
 # System settings
 
-Todo
-
+* Appearance
+	* Dark
 * Keyboard shortcuts
-* Dock preferences
+	* map caps lock -> escape
+* Desjtio & Dock
+	* setup hot corners
+		* top left: Put Display to Sleep
+		* top right: Mission Control
+		* bottom left: Start Screen Saver
+		* bottom right: Desktop
+* Screensaver
+	* Setup Matrix screensaver in this repo
+	* Set screen lock to 60 seconds
 * Trackpad settings
-* Notifications
+	* max out trackpad speed
+	* turn on tap to click
+	* change swipe between pages to two fingers
+	* change swipe between full screen apps to four fingers
+	* change mission control to swipe up four fingers
 * Energy Saver
 * Security and Privacy
-* Sharing and Bluetooth
+	* turn on FileVault
+	* audit location and other permissions
