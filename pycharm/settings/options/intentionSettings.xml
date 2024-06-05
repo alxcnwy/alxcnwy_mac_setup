@@ -1,8 +1,0 @@
-<application>
-  <component name="IntentionManagerSettings">
-    <ignoreAction name="Python/Add type hint for variable" />
-    <ignoreAction name="Python/Specify type for reference using annotation" />
-    <ignoreAction name="Python/Specify type for reference in docstring" />
-    <ignoreAction name="XML/Remove attribute" />
-  </component>
-</application>
