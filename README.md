@@ -6,6 +6,32 @@ Constantly evolving
 
 Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 
+# System settings
+
+* Appearance
+	* Dark
+* Keyboard shortcuts
+	* map caps lock -> escape
+* Desjtio & Dock
+	* setup hot corners
+		* top left: Put Display to Sleep
+		* top right: Mission Control
+		* bottom left: Start Screen Saver
+		* bottom right: Desktop
+* Screensaver
+	* Setup Matrix screensaver in this repo
+	* Set screen lock to 60 seconds
+* Trackpad settings
+	* max out trackpad speed
+	* turn on tap to click
+	* change swipe between pages to two fingers
+	* change swipe between full screen apps to four fingers
+	* change mission control to swipe up four fingers
+* Energy Saver
+* Security and Privacy
+	* turn on FileVault
+	* audit location and other permissions
+
 # Apps
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
 * [BetterTouchTool](https://folivora.ai/)
@@ -43,29 +69,3 @@ copy `dotfiles/.zshrc` into `~`
 ## setup sublime
 [ref](https://webdesign.tutsplus.com/articles/simple-visual-enhancements-for-better-coding-in-sublime-text--webdesign-18052)
 
-
-# System settings
-
-* Appearance
-	* Dark
-* Keyboard shortcuts
-	* map caps lock -> escape
-* Desjtio & Dock
-	* setup hot corners
-		* top left: Put Display to Sleep
-		* top right: Mission Control
-		* bottom left: Start Screen Saver
-		* bottom right: Desktop
-* Screensaver
-	* Setup Matrix screensaver in this repo
-	* Set screen lock to 60 seconds
-* Trackpad settings
-	* max out trackpad speed
-	* turn on tap to click
-	* change swipe between pages to two fingers
-	* change swipe between full screen apps to four fingers
-	* change mission control to swipe up four fingers
-* Energy Saver
-* Security and Privacy
-	* turn on FileVault
-	* audit location and other permissions
