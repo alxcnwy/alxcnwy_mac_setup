@@ -1,7 +1,0 @@
-<application>
-  <component name="UISettings">
-    <option name="FULL_PATHS_IN_TITLE_BAR" value="true" />
-    <option name="IDE_AA_TYPE" value="Greyscale" />
-    <option name="OVERRIDE_NONIDEA_LAF_FONTS" value="true" />
-  </component>
-</application>
