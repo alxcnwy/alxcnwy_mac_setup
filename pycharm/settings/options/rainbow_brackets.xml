@@ -1,0 +1,16 @@
+<application>
+  <component name="RainbowSettings">
+    <option name="doNOTRainbowifyBigFiles" value="false" />
+    <option name="doNOTRainbowifyBracketsWithoutContent" value="true" />
+    <option name="doNOTRainbowifyTheFirstLevel" value="true" />
+    <option name="languageBlacklist">
+      <set>
+        <option value="hocon" />
+        <option value="mxml" />
+        <option value="html" />
+      </set>
+    </option>
+    <option name="suppressBlackListCheck" value="true" />
+    <option name="version" value="6.21" />
+  </component>
+</application>

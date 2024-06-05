@@ -1,0 +1,22 @@
+<code_scheme name="Default" version="173">
+  <option name="RIGHT_MARGIN" value="1000" />
+  <HTMLCodeStyleSettings>
+    <option name="HTML_TEXT_WRAP" value="0" />
+  </HTMLCodeStyleSettings>
+  <Python>
+    <option name="DICT_WRAPPING" value="0" />
+    <option name="FROM_IMPORT_WRAPPING" value="0" />
+  </Python>
+  <XML>
+    <option name="XML_TEXT_WRAP" value="0" />
+  </XML>
+  <codeStyleSettings language="Markdown">
+    <option name="RIGHT_MARGIN" value="500" />
+    <option name="WRAP_ON_TYPING" value="0" />
+  </codeStyleSettings>
+  <codeStyleSettings language="Python">
+    <option name="RIGHT_MARGIN" value="900" />
+    <option name="CALL_PARAMETERS_WRAP" value="0" />
+    <option name="METHOD_PARAMETERS_WRAP" value="0" />
+  </codeStyleSettings>
+</code_scheme>
