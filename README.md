@@ -36,6 +36,8 @@ Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
 * [BetterTouchTool](https://folivora.ai/)
 * [Rewind.ai](https://www.rewind.ai/)
+* [Bartender](https://www.macbartender.com/)
+* [XMenu](https://www.devontechnologies.com/apps/freeware)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html)
 * [Just focus](https://getjustfocus.com/?ref=just-focus-mac)
 * [Monitor control](https://github.com/MonitorControl/MonitorControl)
