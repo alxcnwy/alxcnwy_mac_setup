@@ -24,7 +24,7 @@ Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 	* Dark
 * Keyboard shortcuts
 	* map caps lock -> escape
-* Desjtio & Dock
+* Desktop & Dock
 	* setup hot corners
 		* top left: Put Display to Sleep
 		* top right: Mission Control
