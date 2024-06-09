@@ -36,12 +36,22 @@ Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
 * [BetterTouchTool](https://folivora.ai/)
 * [Rewind.ai](https://www.rewind.ai/)
+* [AutoRaise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
 * [Bartender](https://www.macbartender.com/)
+* [KeyClu](https://github.com/Anze/KeyCluCask/releases/tag/v0.26)
 * [XMenu](https://www.devontechnologies.com/apps/freeware)
+* [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html)
 * [Just focus](https://getjustfocus.com/?ref=just-focus-mac)
 * [Monitor control](https://github.com/MonitorControl/MonitorControl)
 * [Text sniper](https://textsniper.app/)
+* [OmniDiskSweeper](https://www.omnigroup.com/more)
+* [itsycal](https://www.mowglii.com/itsycal/datetime.html)
+* [istatmenus](https://bjango.com/mac/istatmenus/)
+* [HandBrake](https://handbrake.fr/)
+* [alt-tab](https://alt-tab-macos.netlify.app/)
+* [timingapp](https://timingapp.com)
+* [Warp](https://app.warp.dev/)
 
 # Terminal
 ## setup iterm
