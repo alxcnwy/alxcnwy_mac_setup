@@ -66,10 +66,8 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [Warp](https://app.warp.dev/)
 
 # Terminal
-## setup iterm
-[ref](https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-like-a-pro-c0ab3f3c1156/)
 
-load saved preference file
+Install Warp.
 
 ## setup oh-my-zsh
 
