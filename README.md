@@ -81,6 +81,9 @@ copy `dotfiles/.zshrc` into `~`
 ## setup autojump
 [ref](https://github.com/wting/autojump)
 
+## setup magic-dashboard
+[ref](https://github.com/chrisgrieser/zsh-magic-dashboard)
+
 ## setup homebrew
 
 ### save
