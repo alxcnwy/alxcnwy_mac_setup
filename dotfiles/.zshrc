@@ -1,10 +1,8 @@
+alias concat="python3 /Users/alexc/Documents/_____setup/alxcnwy_mac_setup/scripts/concat.py"
+
 export AWS_ACCESS_KEY_ID='xx'
 export AWS_SECRET_ACCESS_KEY='xx'
 
-alias ssh-production='gcloud compute ssh --zone "europe-west3-c" "tst-production"  --project "aisupervision-tst"'
-alias ssh-staging='gcloud compute ssh --zone "europe-west3-c" "tst-staging"  --project "aisupervision-tst"'
-alias ssh-numberboost='gcloud compute ssh --zone "us-central1-a" "numberboost-prod"  
---project "numberboost"'
 
 export EDITOR=nano
 export VISUAL="$EDITOR"
