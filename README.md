@@ -50,8 +50,10 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [AutoRaise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
 * [Bartender](https://www.macbartender.com/)
 * [BetterTouchTool](https://folivora.ai/)
+* [Carbon Copy Cloner](https://bombich.com/)
 * [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
 * [HandBrake](https://handbrake.fr/)
+* [Hazel](https://www.noodlesoft.com/)
 * [istatmenus](https://bjango.com/mac/istatmenus/)
 * [itsycal](https://www.mowglii.com/itsycal/datetime.html)
 * [Just focus](https://getjustfocus.com/?ref=just-focus-mac)
@@ -65,6 +67,7 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [timingapp](https://timingapp.com)
 * [Warp](https://app.warp.dev/)
 * [XMenu](https://www.devontechnologies.com/apps/freeware)
+* [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 # Terminal
 
