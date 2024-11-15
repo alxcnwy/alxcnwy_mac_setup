@@ -1,7 +1,8 @@
 import os
 import sys
+import pyperclip
 
-ignored_folders = ["venv", "migrations", ".git", ".idea", "__pycache__"]
+ignored_folders = ["venv", "migrations", ".git", ".idea", "__pycache__", '.vscode','.idea']
 
 # Function to create a directory tree structure as a string
 def create_directory_tree(directory_path, prefix=""):
@@ -29,8 +30,8 @@ def concatenate_files_in_directory(directory_path):
 
         for file_name in files:
             # Skip image files
-            if file_name.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.DS_Store')):
-                print(f"Skipping image file: {file_name}")
+            if file_name.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.DS_Store', '.pyc', 'ipynb')):
+                print(f"Skipping file: {file_name}")
                 continue
 
             if file_name == ".DS_Store":
@@ -80,5 +81,11 @@ if result_string.strip():  # Check if the string is not empty
         # Write the concatenated file contents
         output_file.write(result_string)
     print(f"Giant string saved to {output_file_path}")
+    
+    # Read the saved file and copy its contents to the clipboard
+    with open(output_file_path, "r", encoding="utf-8") as output_file:
+        file_contents = output_file.read()
+        pyperclip.copy(file_contents)
+        print(f"Contents of {output_file_path} copied to clipboard")
 else:
     print("No files were processed, code.txt was not written.")
