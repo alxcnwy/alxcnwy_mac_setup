@@ -1,278 +1,81 @@
-App Name,File Size (KB),Date Modified
-Perculia,5724,2024-06-05 09:01:30
-PerculiaLoginHelper,28,2024-06-05 09:01:30
-Visual Studio Code,539188,2024-06-05 09:01:30
-Code Helper (Plugin),292,2024-06-05 09:01:30
-Code Helper (GPU),292,2024-06-05 09:01:30
-Code Helper,292,2024-06-05 09:01:30
-Code Helper (Renderer),292,2024-06-05 09:01:30
-Limitless,48996,2024-06-05 09:01:30
-Nebula for Mac,350516,2024-06-05 09:01:30
-VLC,134120,2024-06-05 09:01:30
-Autoupdate,656,2024-06-05 09:01:30
-crash_report_sender,452,2024-06-05 09:01:30
-Warpcast,39260,2024-06-05 09:01:30
-mobile-client,39252,2024-06-05 09:01:30
-ProtonVPN,170476,2024-06-05 09:01:30
-ProtonVPNStarter,268,2024-06-05 09:01:30
-Updater,300,2024-06-05 09:01:30
-CapCut,1338628,2024-06-05 09:01:30
-CapCut,1544,2024-06-05 09:01:30
-VECrashHandler,1528,2024-06-05 09:01:30
-Flipper,27076,2024-06-05 09:01:30
-Flipper,27068,2024-06-05 09:01:30
-LM Studio,306668,2024-06-05 09:01:30
-LM Studio Helper (Renderer),148,2024-06-05 09:01:30
-LM Studio Helper (GPU),148,2024-06-05 09:01:30
-LM Studio Helper,148,2024-06-05 09:01:31
-LM Studio Helper (Plugin),148,2024-06-05 09:01:31
-Google Chrome,1117976,2024-06-05 09:01:31
-Google Chrome Helper (GPU),524,2024-06-05 09:01:31
-Google Chrome Helper (Alerts),780,2024-06-05 09:01:31
-Google Chrome Helper (Plugin),524,2024-06-05 09:01:31
-Google Chrome Helper,524,2024-06-05 09:01:31
-Google Chrome Helper (Renderer),524,2024-06-05 09:01:31
-GoogleUpdater,22044,2024-06-05 09:01:31
-GoogleSoftwareUpdateAgent,4532,2024-06-05 09:01:31
-Google Chrome Helper (GPU),524,2024-06-05 09:01:31
-Google Chrome Helper (Alerts),780,2024-06-05 09:01:31
-Google Chrome Helper (Plugin),524,2024-06-05 09:01:31
-Google Chrome Helper,524,2024-06-05 09:01:31
-Google Chrome Helper (Renderer),524,2024-06-05 09:01:31
-GoogleUpdater,22044,2024-06-05 09:01:31
-GoogleSoftwareUpdateAgent,4532,2024-06-05 09:01:31
-Caffeine,8376,2024-06-05 09:01:31
-Updater,300,2024-06-05 09:01:31
-Karabiner-Elements,17864,2024-06-05 09:01:31
-Updater,300,2024-06-05 09:01:31
-Karabiner-EventViewer,10392,2024-06-05 09:01:31
-TextSniper,11452,2024-06-05 09:01:31
-LaunchAtLoginHelper,192,2024-06-05 09:01:31
-Autoupdate,1236,2024-06-05 09:01:31
-Sublime Text (4143),123632,2024-06-05 09:01:31
-Dropbox,513508,2024-06-05 09:01:32
-DropboxMacUpdate,1724,2024-06-05 09:01:32
-Dropbox Helper (GPU),136,2024-06-05 09:01:32
-Dropbox Helper (Renderer),136,2024-06-05 09:01:32
-Dropbox Helper,136,2024-06-05 09:01:32
-Dropbox Helper (Plugin),136,2024-06-05 09:01:32
-MacWhisper,18156,2024-06-05 09:01:32
-Updater,296,2024-06-05 09:01:32
-Telegram,113448,2024-06-05 09:01:32
-Xcode,6274088,2024-06-05 09:01:35
-XCPreviewAgent,56,2024-06-05 09:01:35
-XCTRunner,52,2024-06-05 09:01:35
-XCPreviewAgent,60,2024-06-05 09:01:35
-XCTRunner,56,2024-06-05 09:01:35
-XCPreviewAgent,80,2024-06-05 09:01:35
-XCTRunner,68,2024-06-05 09:01:35
-XCPreviewAgent,28,2024-06-05 09:01:35
-XCTRunner,44,2024-06-05 09:01:35
-XCPreviewAgent,28,2024-06-05 09:01:35
-XCTRunner,44,2024-06-05 09:01:35
-XCPreviewAgent,56,2024-06-05 09:01:35
-XCPreviewAgent,72,2024-06-05 09:01:35
-Xcode Helper,1768,2024-06-05 09:01:35
-XCTRunner,48,2024-06-05 09:01:35
-IBCocoaSimulator,36,2024-06-05 09:01:35
-XCPreviewAgent,56,2024-06-05 09:01:35
-XCTRunner,48,2024-06-05 09:01:35
-XCPreviewAgent,52,2024-06-05 09:01:35
-XCTRunner,52,2024-06-05 09:01:35
-XCPreviewAgent,52,2024-06-05 09:01:35
-XCTRunner,52,2024-06-05 09:01:35
-GPUToolsAgent,68,2024-06-05 09:01:35
-Python,88,2024-06-05 09:01:35
-Simulator,12244,2024-06-05 09:01:35
-Create ML,7156,2024-06-05 09:01:35
-Instruments,35140,2024-06-05 09:01:36
-backgroundinstruments,72,2024-06-05 09:01:36
-FileMerge,1420,2024-06-05 09:01:36
-Reality Composer Pro,153568,2024-06-05 09:01:36
-Accessibility Inspector,6016,2024-06-05 09:01:36
-OneDrive,1087984,2024-06-05 09:01:36
-OneDrive File Launcher,10320,2024-06-05 09:01:36
-Launcher Disabler,464,2024-06-05 09:01:36
-OneDrive Launcher,464,2024-06-05 09:01:36
-OneDrive File Handler,56512,2024-06-05 09:01:36
-StandaloneUpdater,58504,2024-06-05 09:01:36
-SyncReporter,56512,2024-06-05 09:01:36
-Microsoft SharePoint,212504,2024-06-05 09:01:36
-OneDrive Updater,59184,2024-06-05 09:01:36
-Friday,16456,2024-06-05 09:01:36
-Updater,300,2024-06-05 09:01:36
-Wondershare Dr.Fone,249636,2024-06-05 09:01:36
-Wondershare Passport,1736,2024-06-05 09:01:36
-dr.fone-Recover,242640,2024-06-05 09:01:36
-Wondershare Passport,1736,2024-06-05 09:01:36
-BugsplatReporter,316,2024-06-05 09:01:36
-BugsplatReporter,316,2024-06-05 09:01:36
-TextAssistant,5504,2024-06-05 09:01:37
-Simplenote,3896,2024-06-05 09:01:37
-PyCharm,2164160,2024-06-05 09:01:37
-jcef Helper (Plugin),1116,2024-06-05 09:01:37
-jcef Helper (GPU),1116,2024-06-05 09:01:37
-jcef Helper (Renderer),1116,2024-06-05 09:01:37
-jcef Helper,1116,2024-06-05 09:01:37
-iMovie,3547808,2024-06-05 09:01:38
-Whisper Transcription,21696,2024-06-05 09:01:38
-Microsoft Word,2402384,2024-06-05 09:01:39
-Open XML for Excel,86408,2024-06-05 09:01:39
-Microsoft Error Reporting,5048,2024-06-05 09:01:39
-Little Snitch,96228,2024-06-05 09:01:39
-Little Snitch Network Monitor,50232,2024-06-05 09:01:39
-Little Snitch Agent,8136,2024-06-05 09:01:39
-Little Snitch Software Update,1656,2024-06-05 09:01:39
-Transmission,13668,2024-06-05 09:01:39
-Autoupdate,792,2024-06-05 09:01:39
-Audacity,165684,2024-06-05 09:01:39
-Docker,1869396,2024-06-05 09:01:39
-Docker Desktop,292988,2024-06-05 09:01:39
-Docker Desktop Helper (Renderer),148,2024-06-05 09:01:39
-Docker Desktop Helper,148,2024-06-05 09:01:39
-Docker Desktop Helper (GPU),148,2024-06-05 09:01:39
-Docker Desktop Helper (Plugin),148,2024-06-05 09:01:39
-DockerHelper,1480,2024-06-05 09:01:39
-Autoupdate,1044,2024-06-05 09:01:39
-HW Backgammon,78464,2024-06-05 09:01:39
-backgammon_free,78456,2024-06-05 09:01:40
-Tabula,225696,2024-06-05 09:01:40
-Dropover,35388,2024-06-05 09:01:40
-LoginLauncher,64,2024-06-05 09:01:40
-Microsoft Excel,2099736,2024-06-05 09:01:40
-Microsoft.Mashup.Container,182608,2024-06-05 09:01:40
-Microsoft Error Reporting,5048,2024-06-05 09:01:40
-Creative Cloud Desktop App,908,2024-06-05 09:01:40
-CC Troubleshooter,960,2024-06-05 09:01:40
-Creative Cloud Installer,9288,2024-06-05 09:01:40
-Creative Cloud Uninstaller,2896,2024-06-05 09:01:41
-Adobe Creative Cloud Diagnostics,4836,2024-06-05 09:01:41
-Creative Cloud Helper,12240,2024-06-05 09:01:41
-LogTransport,636,2024-06-05 09:01:41
-Adobe Crash Processor,2532,2024-06-05 09:01:41
-Adobe Crash Reporter,2840,2024-06-05 09:01:41
-Creative Cloud,16240,2024-06-05 09:01:41
-Creative Cloud UI Helper,1232,2024-06-05 09:01:41
-LogTransport,636,2024-06-05 09:01:41
-Adobe Crash Processor,2532,2024-06-05 09:01:41
-Adobe Crash Reporter,2840,2024-06-05 09:01:41
-Creative Cloud UI Helper (Renderer),1764,2024-06-05 09:01:41
-Creative Cloud UI Helper (GPU),1764,2024-06-05 09:01:41
-CCXProcess,111892,2024-06-05 09:01:41
-Core Sync,155476,2024-06-05 09:01:41
-Log Collector tool,576,2024-06-05 09:01:41
-LogTransport,604,2024-06-05 09:01:41
-Adobe Crash Processor,2404,2024-06-05 09:01:41
-Adobe Crash Reporter,2740,2024-06-05 09:01:41
-ChatGPT,140796,2024-06-05 09:01:41
-Updater,300,2024-06-05 09:01:42
-Blender,701044,2024-06-05 09:01:42
-zoom.us,285128,2024-06-05 09:01:42
-ZoomUninstaller,188,2024-06-05 09:01:42
-ZoomPhone,192,2024-06-05 09:01:42
-ZMScreenshot,624,2024-06-05 09:01:42
-ZoomAutoUpdater,1668,2024-06-05 09:01:42
-CptHost,460,2024-06-05 09:01:42
-zCCIMeetingHost,576,2024-06-05 09:01:42
-caphost,172,2024-06-05 09:01:42
-aomhost,22872,2024-06-05 09:01:42
-Transcode,408,2024-06-05 09:01:42
-airhost,14204,2024-06-05 09:01:42
-ZoomClips,5848,2024-06-05 09:01:42
-WhatsApp,138012,2024-06-05 09:01:42
-Updater,440,2024-06-05 09:01:42
-Microsoft Outlook,2258548,2024-06-05 09:01:43
-Outlook Profile Manager,864,2024-06-05 09:01:43
-Microsoft Error Reporting,5052,2024-06-05 09:01:43
-BLE,15552,2024-06-05 09:01:43
-BLE,15544,2024-06-05 09:01:43
-Google Docs,104,2024-06-05 09:01:43
-Google Sheets,100,2024-06-05 09:01:43
-.Karabiner-VirtualHIDDevice-Manager,896,2024-06-05 09:01:43
-Brave Browser,321436,2024-06-05 09:01:44
-Autoupdate,1236,2024-06-05 09:01:44
-Brave Browser Helper,268,2024-06-05 09:01:44
-Brave Browser Helper (GPU),268,2024-06-05 09:01:44
-Brave Browser Helper (Alerts),752,2024-06-05 09:01:44
-Brave Browser Helper (Plugin),268,2024-06-05 09:01:44
-Brave Browser Helper (Renderer),268,2024-06-05 09:01:44
-Pages,431108,2024-06-05 09:01:44
-Google Slides,84,2024-06-05 09:01:44
-Wine Stable,814388,2024-06-05 09:01:44
-Open Interface,97308,2024-06-05 09:01:44
-qFlipper,111628,2024-06-05 09:01:45
-The Unarchiver,23592,2024-06-05 09:01:45
-Microsoft OneNote,1140252,2024-06-05 09:01:45
-Microsoft Error Reporting,5052,2024-06-05 09:01:45
-Chrome Remote Desktop Host Uninstaller,9144,2024-06-05 09:01:45
-MySQLWorkbench,200828,2024-06-05 09:01:45
-Python,272,2024-06-05 09:01:45
-Ledger Live,470128,2024-06-05 09:01:45
-Ledger Live Helper (Plugin),260,2024-06-05 09:01:45
-Ledger Live Helper (GPU),260,2024-06-05 09:01:45
-Ledger Live Helper,260,2024-06-05 09:01:45
-Ledger Live Helper (Renderer),260,2024-06-05 09:01:46
-HitPaw Photo Enhancer,1272468,2024-06-05 09:01:46
-iTerm,99944,2024-06-05 09:01:46
-iTerm2ImportStatus,528,2024-06-05 09:01:46
-Autoupdate,1252,2024-06-05 09:01:46
-Hybrid,2948,2024-06-05 09:01:46
-Skype,599296,2024-06-05 09:01:46
-Skype Helper (Renderer),620,2024-06-05 09:01:46
-Skype Helper (GPU),620,2024-06-05 09:01:46
-Skype Helper,620,2024-06-05 09:01:46
-Adobe Photoshop 2024,5005248,2024-06-05 09:01:46
-Droplet Template,164,2024-06-05 09:01:46
-dynamiclinkmanager,143156,2024-06-05 09:01:46
-dynamiclinkmediaserver,1032296,2024-06-05 09:01:47
-ImporterREDServer,52296,2024-06-05 09:01:47
-CEPHtmlEngine,270036,2024-06-05 09:01:47
-CEPHtmlEngine Helper (Renderer),2424,2024-06-05 09:01:47
-CEPHtmlEngine Helper,2424,2024-06-05 09:01:47
-CEPHtmlEngine Helper (GPU),2424,2024-06-05 09:01:47
-CEPHtmlEngine Helper (Plugin),2424,2024-06-05 09:01:47
-LogTransport2,4144,2024-06-05 09:01:47
-HLCrashProcessor,1152,2024-06-05 09:01:47
-AdobeCrashReport,616,2024-06-05 09:01:47
-LogTransport,640,2024-06-05 09:01:47
-Adobe Crash Processor,2536,2024-06-05 09:01:47
-Adobe Crash Reporter,2844,2024-06-05 09:01:47
-Rewind,259844,2024-06-05 09:01:47
-Updater,300,2024-06-05 09:01:47
-Rotato,50536,2024-06-05 09:01:47
-Updater,300,2024-06-05 09:01:47
-Developer,14380,2024-06-05 09:01:47
-Firefox,379416,2024-06-05 09:01:47
-plugin-container,152,2024-06-05 09:01:47
-crashreporter,2320,2024-06-05 09:01:47
-updater,516,2024-06-05 09:01:47
-media-plugin-helper,152,2024-06-05 09:01:47
-WhatsApp,137752,2024-06-05 09:01:48
-WhatsApp Login Helper,20,2024-06-05 09:01:48
-WhatsApp Helper (Renderer),20,2024-06-05 09:01:48
-WhatsApp Helper (Plugin),20,2024-06-05 09:01:48
-crash_report_sender,356,2024-06-05 09:01:48
-WhatsApp Helper,20,2024-06-05 09:01:48
-WhatsApp Helper (GPU),20,2024-06-05 09:01:48
-AudioBuddy,5604,2024-06-05 09:01:48
-Updater,300,2024-06-05 09:01:48
-Microsoft PowerPoint,1803328,2024-06-05 09:01:48
-Open XML for Excel,86408,2024-06-05 09:01:48
-Microsoft Error Reporting,5052,2024-06-05 09:01:48
-Slack,368828,2024-06-05 09:01:48
-Slack Login Helper,28,2024-06-05 09:01:49
-Slack Helper,28,2024-06-05 09:01:49
-Slack Helper (Renderer),28,2024-06-05 09:01:49
-Slack Helper (Plugin),28,2024-06-05 09:01:49
-Slack Helper (GPU),28,2024-06-05 09:01:49
-BetterTouchTool,104676,2024-06-05 09:01:49
-BetterTouchProcessPrioWatcher,364,2024-06-05 09:01:49
-BTTRelaunch,428,2024-06-05 09:01:49
-BTTHelper,76,2024-06-05 09:01:49
-Updater,808,2024-06-05 09:01:49
-Discord,420508,2024-06-05 09:01:49
-Discord Helper,276,2024-06-05 09:01:49
-Discord Helper (Plugin),276,2024-06-05 09:01:49
-Discord Helper (GPU),276,2024-06-05 09:01:49
-Discord Helper (Renderer),276,2024-06-05 09:01:49
-Sublime Text,113548,2024-06-05 09:01:49
+Application Name - Version
+AltTab - 6.70.0
+Anaconda-Navigator - $PKG_VERSION
+Audacity - 3.3.3.0
+AudioBuddy - 1.0.4
+Autotab - 0.8.9
+BLE - 1.2.0
+Bartender 5 - 5.0.52
+BetterTouchTool - 4.707
+Blender - 4.1.1
+Brave Browser - 125.1.66.110
+Caffeine - 1.4.3
+CapCut - 4.8.0
+Carbon Copy Cloner - 7.0.1
+ChatGPT - 1.2024.157
+Chrome Remote Desktop Host Uninstaller - 124.0.6367
+Cursor Pro - 2.12
+Cursor - 0.42.2
+DB Browser for SQLite - 3.13.99
+Developer - 10.6.7
+Discord - 0.0.323
+Docker - 4.20.0
+Final Cut Pro - 10.7.1
+Firefox - 130.0.1
+Flipper - 1.8.0
+Friday - 0.20
+GitHub Desktop - 3.4.1
+GoPro Quik - 2.2.0
+Google Chrome - 130.0.6723.117
+Google Docs - 90.0
+Google Sheets - 90.0
+Google Slides - 90.0
+HandBrake - 1.8.0
+Hybrid - 1.0.0
+Karabiner-Elements - 14.12.0
+Karabiner-EventViewer - 14.12.0
+Keysmith - 1.18.6
+Keystroke Pro - 2.11
+LM Studio - 0.2.24
+Ledger Live - 2.60.0
+Little Snitch - 5.7.6
+MacWhisper - 3.5.1
+Microsoft Excel - 16.73
+Microsoft OneNote - 16.73
+Microsoft Outlook - 16.73.2
+Microsoft PowerPoint - 16.73
+Microsoft Word - 16.73
+Mirror Magnet - 1.10
+MySQLWorkbench - 8.0.40.CE
+Ollama - 0.4.1
+OneDrive - 23.096.0507
+Open Interface - 0.0.0
+Pages - 14.2
+ProtonVPN - 4.4.0
+PyCharm - 2022.3.1
+Raspberry Pi Imager - 1.8.5
+Rewind - 1.5310
+Rotato - 144.1
+Safari - 17.6
+Simplenote - 2.21
+Skype - 8.129
+Slack - 4.41.97
+Sublime Text (4143) - Build 4143
+Sublime Text - Build 4180
+Tabula - 1.2.1.18052200
+Telegram - 11.3.1
+TextAssistant - 1.4
+TextSniper - 1.11
+The Unarchiver - 4.3.8
+Transmission - 3.00
+VLC - 3.0.18
+VirtualBox - 7.1.2
+Visual Studio Code - 1.93.1
+Warp - 0.1.0
+WhatsApp - 24.22.78
+Whisper Transcription - 10.6.1
+Xcode - 16.1
+iMovie - 10.4.3
+iTerm - 3.5.5
+pgAdmin 4 - 8.11
+zoom.us - 6.0.11 (35001)
