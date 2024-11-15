@@ -18,7 +18,7 @@ Constantly evolving
 
 Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 
-# System settings
+# Mac System settings
 
 * Appearance
 	* Dark
@@ -47,20 +47,15 @@ Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
 # Apps
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
 * [alt-tab](https://alt-tab-macos.netlify.app/)
-* [AutoRaise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
 * [Bartender](https://www.macbartender.com/)
 * [BetterTouchTool](https://folivora.ai/)
-* [Carbon Copy Cloner](https://bombich.com/)
 * [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
 * [HandBrake](https://handbrake.fr/)
 * [Hazel](https://www.noodlesoft.com/)
 * [istatmenus](https://bjango.com/mac/istatmenus/)
-* [itsycal](https://www.mowglii.com/itsycal/datetime.html)
-* [Just focus](https://getjustfocus.com/?ref=just-focus-mac)
 * [KeyClu](https://github.com/Anze/KeyCluCask/releases/tag/v0.26)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html)
 * [Monitor control](https://github.com/MonitorControl/MonitorControl)
-* [OmniDiskSweeper](https://www.omnigroup.com/more)
 * [Rewind.ai](https://www.rewind.ai/)
 * [Rocket](https://matthewpalmer.net/rocket/)
 * [Text sniper](https://textsniper.app/)
