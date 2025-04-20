@@ -54,6 +54,7 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
 * [HandBrake](https://handbrake.fr/)
 * [Hazel](https://www.noodlesoft.com/)
+* [Horo timer] (https://matthewpalmer.net/horo-free-timer-mac/)
 * [istatmenus](https://bjango.com/mac/istatmenus/)
 * [KeyClu](https://github.com/Anze/KeyCluCask/releases/tag/v0.26)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html) (paid - def worth it)
@@ -67,8 +68,6 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 # Terminal
-
-Install Warp.
 
 ## setup oh-my-zsh
 
@@ -92,5 +91,11 @@ copy `dotfiles/.zshrc` into `~`
 ### load
 `cat Brewfile | xargs brew`
 
-# Remember
-It's impossible to break your computer. If something goes wrong, just reset and restore backup! 
+# Parting advice
+It's impossible to break your computer. 
+
+If something goes wrong, just reset and restore backup! 
+
+And always have at least 2 backups - 1 physical, 1 online. 
+
+Godspeed 🫡
