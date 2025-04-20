@@ -54,7 +54,7 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
 * [HandBrake](https://handbrake.fr/)
 * [Hazel](https://www.noodlesoft.com/)
-* [Horo timer] (https://matthewpalmer.net/horo-free-timer-mac/)
+* [Horo timer](https://matthewpalmer.net/horo-free-timer-mac/)
 * [istatmenus](https://bjango.com/mac/istatmenus/)
 * [KeyClu](https://github.com/Anze/KeyCluCask/releases/tag/v0.26)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html) (paid - def worth it)
