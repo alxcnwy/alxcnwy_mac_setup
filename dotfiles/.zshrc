@@ -3,6 +3,8 @@ alias concat="python3 /Users/alexc/Documents/_____setup/alxcnwy_mac_setup/script
 alias ju="jupyter notebook"
 alias la="ls -la"
 alias py="python"
+alias vs='code -n .'
+
 
 # sublime text
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"

@@ -49,23 +49,19 @@ GLHF
 # Apps
 Install the apps in `mac_apps.txt` - most are from the app store but specialist ones below:
 * [alt-tab](https://alt-tab-macos.netlify.app/)
+* [Arq Backup](https://www.arqbackup.com/)
 * [Bartender](https://www.macbartender.com/)
 * [BetterTouchTool](https://folivora.ai/) (paid - def worth it)
-* [Folder Peek](https://apps.apple.com/us/app/folder-peek/id1615988943?mt=12)
-* [HandBrake](https://handbrake.fr/)
-* [Hazel](https://www.noodlesoft.com/)
 * [Horo timer](https://matthewpalmer.net/horo-free-timer-mac/)
-* [istatmenus](https://bjango.com/mac/istatmenus/)
 * [KeyClu](https://github.com/Anze/KeyCluCask/releases/tag/v0.26)
 * [little snitch](https://www.obdev.at/products/littlesnitch/download.html) (paid - def worth it)
 * [Monitor control](https://github.com/MonitorControl/MonitorControl)
 * [Rewind.ai](https://www.rewind.ai/)
 * [Rocket](https://matthewpalmer.net/rocket/) (get pro, def worth it)
 * [Text sniper](https://textsniper.app/) (paid)
-* [timingapp](https://timingapp.com)
-* [Warp](https://app.warp.dev/)
+* [Ghostty](https://ghostty.org/)
 * [XMenu](https://www.devontechnologies.com/apps/freeware)
-* [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 # Terminal
 
