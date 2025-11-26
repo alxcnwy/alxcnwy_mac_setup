@@ -2,7 +2,7 @@ import os
 import sys
 import pyperclip
 
-ignored_folders = ["venv", "migrations", ".git", ".idea", "__pycache__", '.vscode','.idea']
+ignored_folders = ["venv", ".venv", "migrations", ".git", ".idea", "__pycache__", ".vscode", ".idea"]
 
 # Function to create a directory tree structure as a string
 def create_directory_tree(directory_path, prefix=""):
@@ -23,12 +23,19 @@ def create_directory_tree(directory_path, prefix=""):
 def concatenate_files_in_directory(directory_path):
     giant_string = ""
 
+    # Track which directories have already had a CSV/JSON included
+    processed_csv_dirs = set()
+    processed_json_dirs = set()
+
     # Traverse the directory and its subdirectories
     for root, dirs, files in os.walk(directory_path):
         # Skip the "venv" directory
         dirs[:] = [d for d in dirs if d not in ignored_folders]
 
         for file_name in files:
+            _, ext = os.path.splitext(file_name)
+            ext = ext.lower()
+
             # Skip image files
             if file_name.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.DS_Store', '.pyc', 'ipynb')):
                 print(f"Skipping file: {file_name}")
@@ -36,6 +43,22 @@ def concatenate_files_in_directory(directory_path):
 
             if file_name == ".DS_Store":
                 continue
+
+            is_csv = ext == ".csv"
+            is_json = ext == ".json"
+
+            # Only include one CSV and one JSON per directory
+            if is_csv:
+                if root in processed_csv_dirs:
+                    print(f"Skipping additional CSV file in {root}: {file_name}")
+                    continue
+                processed_csv_dirs.add(root)
+
+            if is_json:
+                if root in processed_json_dirs:
+                    print(f"Skipping additional JSON file in {root}: {file_name}")
+                    continue
+                processed_json_dirs.add(root)
 
             file_path = os.path.join(root, file_name)
             # Prepend the directory structure to the file name in the string
@@ -47,7 +70,17 @@ def concatenate_files_in_directory(directory_path):
             try:
                 # Append file contents to the giant string
                 with open(file_path, 'r', encoding='utf-8') as file:
-                    contents = file.read()
+                    if is_csv:
+                        # For CSV files, only capture the first 3 rows (lines)
+                        contents = ""
+                        for _ in range(3):
+                            line = file.readline()
+                            if not line:
+                                break
+                            contents += line
+                    else:
+                        contents = file.read()
+
                     giant_string += contents + "\n\n"  # Add an extra newline for separation
             except Exception as e:
                 # Handle exceptions for reading files

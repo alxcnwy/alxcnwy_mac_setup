@@ -95,3 +95,10 @@ If something goes wrong, just reset and restore backup!
 And always have at least 2 backups - 1 physical, 1 online. 
 
 Godspeed 🫡
+
+
+```
+brew install --cask qlcolorcode qlstephen qlmarkdown
+qlmanage -r
+qlmanage -r cache
+```
