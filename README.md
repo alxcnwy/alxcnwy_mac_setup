@@ -87,6 +87,30 @@ copy `dotfiles/.zshrc` into `~`
 ### load
 `cat Brewfile | xargs brew`
 
+## project bootstrap script
+
+There is a simple per-project bootstrap helper in `scripts/bootstrap` that:
+
+* creates a `.venv` in the current directory
+* upgrades `pip`/`wheel` and installs `flask`
+* writes an `agents.md` with your preferences
+* logs the run under `_runs/<timestamp>/init.txt`
+
+Usage from this repo:
+
+```bash
+cd /Users/alexc/Documents/_____setup/alxcnwy_mac_setup
+chmod +x scripts/bootstrap   # once
+./scripts/bootstrap
+```
+
+Optional global alias (run once in a shell):
+
+```bash
+echo 'alias bootstrap="'$(pwd)'/scripts/bootstrap"' >> ~/.zshrc
+source ~/.zshrc
+```
+
 # Parting advice
 It's impossible to break your computer. 
 

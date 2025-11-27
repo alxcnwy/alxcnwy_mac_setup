@@ -1,0 +1,16 @@
+{
+  "name": "codex-status",
+  "displayName": "Codex Status",
+  "description": "Grey/green/red status dot based on Codex CLI runtime status.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "main": "extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {},
+  "scripts": {}
+}
+

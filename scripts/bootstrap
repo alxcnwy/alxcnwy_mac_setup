@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -e
+
+proj_root="$(pwd)"
+timestamp="$(date +"%Y%m%d_%H%M%S")"
+log_dir="$proj_root/_runs/$timestamp"
+
+mkdir -p "$log_dir"
+
+# venv
+python3 -m venv .venv
+source .venv/bin/activate
+
+# deps
+pip install --upgrade pip wheel
+pip install flask
+
+# agents.md
+cat > "$proj_root/agents.md" <<'EOF'
+# Agents
+
+You prefer:
+- Python
+- Flask
+- Simple, modular JavaScript
+- No frameworks unless unavoidable
+- Fast iteration
+- Small focused files
+- Reasonable assumptions
+- Reviews always overwrite review.md
+EOF
+
+# log
+cat > "$log_dir/init.txt" <<EOF
+Bootstrap run: $timestamp
+Dir: $proj_root
+Python: $(python3 --version)
+EOF
+
+echo "Bootstrap complete: $log_dir"
+
