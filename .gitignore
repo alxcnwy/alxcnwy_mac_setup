@@ -1,1 +1,4 @@
 .DS_Store
+
+# BetterTouchTool live runtime data (databases, logs, license, caches)
+app_config_files/bettertouchtool/live/

@@ -1,0 +1,22 @@
+{
+  "window.zoomLevel": 1,
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.minimap.autohide": "mouseover",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "bottom",
+  "editor.wordWrap": "off",
+  "editor.minimap.enabled": true,
+  "chatgpt.openOnStartup": true,
+  "chat.disableAIFeatures": false,
+  "editor.fontSize": 11,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "python.createEnvironment.trigger": "off",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+  "terminal.integrated.tabs.enabled": true
+}

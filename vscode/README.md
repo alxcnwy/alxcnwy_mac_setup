@@ -104,3 +104,16 @@ chmod +x "$HOME/bin/codexx"
 
 Ensure `~/bin` is on your `PATH` (e.g. via your shell config), then use `codexx` instead of `codex`. The status dot in VS Code will now reflect Codex CLI status.
 
+### Codex history backup script
+
+To keep a plain-text archive of your Codex CLI / ChatGPT sessions, this repo includes `scripts/backup_chatgpt.py`:
+
+- Reads session `.jsonl` files from `~/.codex/sessions`.
+- Writes human-readable `.txt` files into `~/Documents/_____db/chatgpt` with timestamps and events per session.
+
+Run it from this repo:
+
+```bash
+cd "$HOME/Documents/_____setup/alxcnwy_mac_setup"
+python3 scripts/backup_chatgpt.py
+```

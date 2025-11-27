@@ -8,7 +8,22 @@ log_dir="$proj_root/_runs/$timestamp"
 mkdir -p "$log_dir"
 
 # venv
-python3 -m venv .venv
+if [ -d ".venv" ]; then
+  echo ".venv already exists."
+  read -r -p "Recreate virtualenv in .venv? [y/N] " answer
+  case "$answer" in
+    [Yy]*)
+      echo "Recreating .venv..."
+      rm -rf .venv
+      python3 -m venv .venv
+      ;;
+    *)
+      echo "Reusing existing .venv"
+      ;;
+  esac
+else
+  python3 -m venv .venv
+fi
 source .venv/bin/activate
 
 # deps
@@ -32,10 +47,22 @@ EOF
 
 # log
 cat > "$log_dir/init.txt" <<EOF
-Bootstrap run: $timestamp
-Dir: $proj_root
-Python: $(python3 --version)
+# 🍏 Bootstrap Run
+
+- Timestamp: $timestamp
+- Directory: $proj_root
+- Python: $(python3 --version)
+
+---
+
+## Next Steps
+
+- Activate the venv: \`source .venv/bin/activate\`
+- Create or update \`spec.md\` with a short project brief
+- Review \`agents.md\` and tweak preferences if needed
+- Start your app (e.g. create \`app.py\` and run \`flask run\`)
 EOF
 
-echo "Bootstrap complete: $log_dir"
-
+echo "🍏 Bootstrap complete."
+echo "  Log written to: $log_dir/init.txt"
+echo "  Next: edit spec.md, review agents.md, start coding."

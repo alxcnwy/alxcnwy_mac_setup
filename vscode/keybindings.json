@@ -2,12 +2,16 @@
   {
     "key": "ctrl+cmd+1",
     "command": "workbench.profiles.switchProfile",
-    "args": { "profile": "Main32" }
+    "args": {
+      "profile": "Main32"
+    }
   },
   {
     "key": "ctrl+cmd+2",
     "command": "workbench.profiles.switchProfile",
-    "args": { "profile": "Vertical24" }
+    "args": {
+      "profile": "Vertical24"
+    }
   },
   {
     "key": "cmd+b",
@@ -82,5 +86,66 @@
     "key": "shift+cmd+j",
     "command": "-workbench.action.search.toggleQueryDetails",
     "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+shift+f",
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "cmd+option+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+option+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "cmd+shift+;",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "cmd+shift+\\",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
   }
 ]

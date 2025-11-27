@@ -16,9 +16,11 @@ Everything I need to set up a new mac.
 
 Constantly evolving
 
-Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy)
+Send me feedback / tips on [Twitter @alxcnwy](https://twitter.com/alxcnwy) or [LinkedIn](https://www.linkedin.com/in/alxcnwy/)
 
-GLHF
+I build cool AI stuff and do consulting: [NumberBoost.com](https://www.numberboost.com)
+
+GLHF 🫡
 
 # Mac System settings
 
@@ -61,7 +63,53 @@ Install the apps in `mac_apps.txt` - most are from the app store but specialist 
 * [Text sniper](https://textsniper.app/) (paid)
 * [Ghostty](https://ghostty.org/)
 * [XMenu](https://www.devontechnologies.com/apps/freeware)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com/) — see `vscode/README.md` for config and `vscode/KEYBINDINGS.md` for keyboard shortcuts.
+
+## Config symlinks per Mac (VS Code + BetterTouchTool)
+
+These live outside the repo, so you must re-create the symlinks once on every new Mac after cloning this repo.
+
+### VS Code user settings
+
+VS Code stores user config in `~/Library/Application Support/Code/User`. To make this repo the source of truth:
+
+```bash
+CODE_USER="$HOME/Library/Application Support/Code/User"
+
+# Optional: back up any existing files first
+mv "$CODE_USER/keybindings.json" "$CODE_USER/keybindings.json.backup" 2>/dev/null || true
+mv "$CODE_USER/settings.json" "$CODE_USER/settings.json.backup" 2>/dev/null || true
+
+ln -s "$HOME/Documents/_____setup/alxcnwy_mac_setup/vscode/keybindings.json" "$CODE_USER/keybindings.json"
+ln -s "$HOME/Documents/_____setup/alxcnwy_mac_setup/vscode/settings.json" "$CODE_USER/settings.json"
+```
+
+Run those once per machine; afterwards, editing the repo files updates VS Code.
+
+### BetterTouchTool config
+
+BetterTouchTool stores its config under `~/Library/Application Support/BetterTouchTool`.
+
+- To take a one-off snapshot into the repo (safe default):
+
+  ```bash
+  cd "$HOME/Documents/_____setup/alxcnwy_mac_setup"
+  python3 scripts/sync_bettertouchtool.py
+  ```
+
+  This writes a copy to `app_config_files/bettertouchtool/live`.
+
+- To make the repo the live config location (symlinked):
+
+  1. Quit BetterTouchTool completely.
+  2. Run:
+
+     ```bash
+     cd "$HOME/Documents/_____setup/alxcnwy_mac_setup"
+     python3 scripts/sync_bettertouchtool.py --link --force
+     ```
+
+  This moves the BetterTouchTool config into `app_config_files/bettertouchtool/live` and replaces the original folder with a symlink. You need to do this once per Mac.
 
 # Terminal
 
@@ -110,6 +158,19 @@ Optional global alias (run once in a shell):
 echo 'alias bootstrap="'$(pwd)'/scripts/bootstrap"' >> ~/.zshrc
 source ~/.zshrc
 ```
+
+## ChatGPT / Codex history backup
+
+Use `scripts/backup_chatgpt.py` to export Codex CLI session history (`~/.codex/sessions`) into flat text files under `~/Documents/_____db/chatgpt`.
+
+From this repo:
+
+```bash
+cd /Users/alexc/Documents/_____setup/alxcnwy_mac_setup
+python3 scripts/backup_chatgpt.py
+```
+
+Each run will create timestamped files like `YYYY-MM-DD_HH-MM-SS__SESSIONID.txt` containing the events for each session.
 
 # Parting advice
 It's impossible to break your computer. 

@@ -19,6 +19,7 @@ export VISUAL="$EDITOR"
 
 # Path config
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Users/alexc/anaconda3/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PATH=$PATH:/usr/local/mysql/bin
 
 # Oh My Zsh
