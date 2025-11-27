@@ -2,10 +2,9 @@
 set -e
 
 proj_root="$(pwd)"
-timestamp="$(date +"%Y%m%d_%H%M%S")"
-log_dir="$proj_root/_runs/$timestamp"
-
-mkdir -p "$log_dir"
+proj_name="$(basename "$proj_root")"
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+agents_src="$script_dir/../AGENTS.md"
 
 # venv
 if [ -d ".venv" ]; then
@@ -30,39 +29,79 @@ source .venv/bin/activate
 pip install --upgrade pip wheel
 pip install flask
 
-# agents.md
-cat > "$proj_root/agents.md" <<'EOF'
-# Agents
+# AGENTS.md (source of truth for agent behavior)
+if [ -f "$agents_src" ]; then
+  cp "$agents_src" "$proj_root/AGENTS.md"
+else
+  echo "Warning: AGENTS.md not found at $agents_src; skipping copy."
+fi
 
-You prefer:
-- Python
-- Flask
-- Simple, modular JavaScript
-- No frameworks unless unavoidable
-- Fast iteration
-- Small focused files
-- Reasonable assumptions
-- Reviews always overwrite review.md
+# spec.md (lightweight project spec)
+if [ ! -f "$proj_root/spec.md" ]; then
+  cat > "$proj_root/spec.md" <<'EOF'
+# Project Spec
+
+## What are you building?
+- One sentence summary:
+- Who is it for:
+- Why now:
+
+## Scope (MVP)
+- [ ] Core feature 1
+- [ ] Core feature 2
+- [ ] Nice-to-have
+
+## Notes
+- Constraints / assumptions:
+- Open questions:
 EOF
+fi
 
-# log
-cat > "$log_dir/init.txt" <<EOF
-# 🍏 Bootstrap Run
+# todo.md (scratchpad tasks)
+if [ ! -f "$proj_root/todo.md" ]; then
+  cat > "$proj_root/todo.md" <<'EOF'
+# TODO
 
-- Timestamp: $timestamp
-- Directory: $proj_root
-- Python: $(python3 --version)
+- [ ] First concrete task
+- [ ] Second concrete task
+- [ ] One tiny task you can do in 5 minutes
 
----
-
-## Next Steps
-
-- Activate the venv: \`source .venv/bin/activate\`
-- Create or update \`spec.md\` with a short project brief
-- Review \`agents.md\` and tweak preferences if needed
-- Start your app (e.g. create \`app.py\` and run \`flask run\`)
+## Later / Someday
+- [ ] Bigger idea to revisit
 EOF
+fi
+
+# README.md (quick start at the top)
+if [ ! -f "$proj_root/README.md" ]; then
+  cat > "$proj_root/README.md" <<EOF
+# $proj_name
+
+Short one-sentence description of the project.
+
+## Getting Started
+
+1. Activate the virtualenv:
+
+   \`\`\`bash
+   source .venv/bin/activate
+   \`\`\`
+
+2. Run the app (adjust as needed):
+
+   \`\`\`bash
+   flask run
+   \`\`\`
+
+## Project Docs
+
+- See \`spec.md\` for a lightweight project spec.
+- See \`todo.md\` for the current task list.
+- See \`AGENTS.md\` for how the AI assistant should behave.
+EOF
+fi
 
 echo "🍏 Bootstrap complete."
-echo "  Log written to: $log_dir/init.txt"
-echo "  Next: edit spec.md, review agents.md, start coding."
+echo "  Next steps:"
+echo "    - Activate venv: source .venv/bin/activate"
+echo "    - Skim README.md, spec.md, and todo.md; edit as needed"
+echo "    - Review AGENTS.md and start coding."

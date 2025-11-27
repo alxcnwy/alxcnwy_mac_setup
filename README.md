@@ -141,20 +141,45 @@ There is a simple per-project bootstrap helper in `scripts/bootstrap` that:
 
 * creates a `.venv` in the current directory
 * upgrades `pip`/`wheel` and installs `flask`
-* writes an `agents.md` with your preferences
-* logs the run under `_runs/<timestamp>/init.txt`
+* copies this repo's `AGENTS.md` into the project as `AGENTS.md` (overwriting if present)
+* creates simple `spec.md`, `todo.md`, and `README.md` templates (if missing)
 
-Usage from this repo:
+### What it sets up
+
+When you run `scripts/bootstrap` inside a project folder, you get:
+
+* `AGENTS.md` — the source of truth for how AI assistants (Codex CLI, etc.) should behave in that repo. It includes rules like “do not overengineer”, how to use the markdown files, and a simple Git/GitHub workflow.
+* `spec.md` — a one-page project spec: what you’re building, who it’s for, and the MVP scope. This is intentionally lightweight; it’s not a long PRD.
+* `todo.md` — a small, focused task list. Use it to track the next few things to ship; prune it instead of adding process.
+* `README.md` — a minimal “how to run this” doc with a Getting Started section (activate `.venv`, run `flask`, etc.).
+
+The goal is to make it fast to start a new project with:
+
+* a working Python/Flask environment
+* a clear, simple way to run the app
+* just enough structure to capture intent and next steps
+* strong defaults that remind you not to overengineer
+
+### Recommended new-project flow
+
+1. Create a new folder for your project and `cd` into it.
+2. Run the bootstrap script:
+
+   ```bash
+   /Users/alexc/Documents/_____setup/alxcnwy_mac_setup/scripts/bootstrap
+   ```
+
+   (or use the `bootstrap` shell alias below).
+
+3. Open `README.md` and adjust the Getting Started commands if needed.
+4. Fill in `spec.md` with a one-sentence summary, who it’s for, and 2–3 MVP bullets.
+5. Add a few concrete items to `todo.md` (ideally tasks you can do today).
+6. Skim `AGENTS.md` so your AI assistant follows your preferences in that repo.
+
+### Optional global alias (run once in a shell)
 
 ```bash
 cd /Users/alexc/Documents/_____setup/alxcnwy_mac_setup
-chmod +x scripts/bootstrap   # once
-./scripts/bootstrap
-```
-
-Optional global alias (run once in a shell):
-
-```bash
 echo 'alias bootstrap="'$(pwd)'/scripts/bootstrap"' >> ~/.zshrc
 source ~/.zshrc
 ```

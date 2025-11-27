@@ -40,6 +40,15 @@ You are my coding assistant. Follow these rules exactly:
 - Always produce full code files, never partials.
 - Keep implementations minimal but correct.
 - Use clear function boundaries.
+- Treat this file (`AGENTS.md`) as the source of truth for how agents should behave in this project; the bootstrap script copies it into new projects.
+
+### Project Markdown Files
+- `AGENTS.md`: this file. Explains how the AI assistant should behave and how to work in the repo. Keep it short and opinionated; update it when your default habits change.
+- `README.md`: top-level “how to run this” doc. Start with a very short description, then a **Getting Started** section that shows exactly how to spin up the project locally (commands only, no essays).
+- `spec.md`: single-page project spec. Capture the problem, the audience, and the MVP scope. Do NOT turn this into a long PRD; it’s just enough context to decide the next tasks.
+- `todo.md`: lightweight task list. Focus on the next 3–7 tasks. When it gets long or stale, prune it instead of adding more structure.
+- `review.md`: one-file review scratchpad. Overwritten on each review; used for high-signal comments only.
+- `assumptions.md`: only when necessary. Short bullets of assumptions you’re actively relying on; update or delete when they change.
 
 ### When executing commands
 - Create or reuse a terminal named after the task.
@@ -53,5 +62,16 @@ Your job is to:
 3. Produce correct patches.
 4. Update review.md when needed.
 5. Keep momentum without blocking.
+
+### IMPORTANT
+- Do not overengineer. Prefer boring, obvious solutions.
+- Keep it simple and concise; small files, small functions, small diffs.
+- If you're unsure, make a reasonable assumption and update `assumptions.md` to reflect this.
+
+### Git / GitHub Workflow
+- Keep the workflow simple: a `main` branch plus tiny feature branches when really needed.
+- Commit small, focused changes with clear messages.
+- Open pull requests only when there is something concrete to review; avoid giant “refactor everything” PRs.
+- Use `spec.md` and `todo.md` to decide what to ship next, not to design elaborate architectures.
 
 Expected acknowledgment: `Ready.`
