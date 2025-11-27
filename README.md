@@ -186,16 +186,50 @@ source ~/.zshrc
 
 ## ChatGPT / Codex history backup
 
-Use `scripts/backup_chatgpt.py` to export Codex CLI session history (`~/.codex/sessions`) into flat text files under `~/Documents/_____db/chatgpt`.
+Use `scripts/backup_chatgpt.py` to export Codex CLI session history (`~/.codex/sessions`) into:
 
-From this repo:
+- human-readable text files under `~/Documents/_____db/chatgpt/txt`
+- mirrored raw JSONL files under `~/Documents/_____db/chatgpt/jsonl`
+
+From this repo, you can run a one-shot export:
 
 ```bash
 cd /Users/alexc/Documents/_____setup/alxcnwy_mac_setup
 python3 scripts/backup_chatgpt.py
 ```
 
-Each run will create timestamped files like `YYYY-MM-DD_HH-MM-SS__SESSIONID.txt` containing the events for each session.
+Each run will create timestamped files like `YYYY-MM-DD_HH-MM-SS__SESSIONID.txt` and `YYYY-MM-DD_HH-MM-SS__SESSIONID.jsonl`.
+
+### Background auto-backup via launchd (recommended)
+
+To keep backups updating automatically while you use Codex:
+
+1. A launchd user agent plist is installed at:
+
+   ```bash
+   ls ~/Library/LaunchAgents/com.alxcnwy.backup_chatgpt.plist
+   ```
+
+2. Load it once so it starts now (and at login):
+
+   ```bash
+   launchctl load ~/Library/LaunchAgents/com.alxcnwy.backup_chatgpt.plist
+   ```
+
+3. If you ever update the plist, unload/reload it:
+
+   ```bash
+   launchctl unload ~/Library/LaunchAgents/com.alxcnwy.backup_chatgpt.plist
+   launchctl load ~/Library/LaunchAgents/com.alxcnwy.backup_chatgpt.plist
+   ```
+
+4. To stop running it entirely:
+
+   ```bash
+   launchctl unload ~/Library/LaunchAgents/com.alxcnwy.backup_chatgpt.plist
+   ```
+
+The agent runs `scripts/backup_chatgpt.py --watch --interval 15`, so your `txt` and `jsonl` archives stay in sync with `~/.codex/sessions` during active Codex sessions.
 
 # Parting advice
 It's impossible to break your computer. 
@@ -204,11 +238,4 @@ If something goes wrong, just reset and restore backup!
 
 And always have at least 2 backups - 1 physical, 1 online. 
 
-Godspeed 🫡
-
-
-```
-brew install --cask qlcolorcode qlstephen qlmarkdown
-qlmanage -r
-qlmanage -r cache
-```
+Godspeed 

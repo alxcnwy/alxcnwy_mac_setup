@@ -3,12 +3,16 @@
 backup_chatgpt.py
 
 Local helper to export Codex CLI / ChatGPT session history from the Codex CLI
-session log directory into a simple, human-readable text archive.
+session log directory into a simple, human-readable text archive plus a
+structured JSONL mirror.
 
 What it does:
 - Reads `.jsonl` session files under `~/.codex/sessions` (written by Codex CLI).
-- Writes `.txt` files into `~/Documents/_____db/chatgpt`, one per session, with
-  timestamps and event payloads for easier grepping and manual review.
+- Writes `.txt` files into `~/Documents/_____db/chatgpt/txt`, one per session,
+  with timestamps and event payloads for easier grepping and manual review.
+- Copies the raw `.jsonl` session files into
+  `~/Documents/_____db/chatgpt/jsonl` using the same timestamp/session-id based
+  naming scheme, so you keep a structured archive too.
 
 How to run:
 - One-shot backup (manual):
@@ -36,6 +40,7 @@ from datetime import datetime
 import argparse
 import json
 import time
+import shutil
 
 
 # Source and destination
@@ -43,6 +48,10 @@ import time
 SRC = Path.home() / ".codex" / "sessions"
 DEST = Path.home() / "Documents" / "_____db" / "chatgpt"
 DEST.mkdir(parents=True, exist_ok=True)
+DEST_TXT = DEST / "txt"
+DEST_JSONL = DEST / "jsonl"
+DEST_TXT.mkdir(parents=True, exist_ok=True)
+DEST_JSONL.mkdir(parents=True, exist_ok=True)
 
 
 def safe(s: str) -> str:
@@ -117,8 +126,11 @@ def export_sessions(seen_files=None) -> int:
         except Exception:
             created_str = "unknown"
 
-        out_name = f"{created_str}__{safe(session_id)}.txt"
-        out_path = DEST / out_name
+        base_name = f"{created_str}__{safe(session_id)}"
+        txt_name = f"{base_name}.txt"
+        jsonl_name = f"{base_name}.jsonl"
+        out_txt_path = DEST_TXT / txt_name
+        out_jsonl_path = DEST_JSONL / jsonl_name
 
         lines = []
         lines.append(f"SESSION_FILE: {session_file}")
@@ -138,8 +150,17 @@ def export_sessions(seen_files=None) -> int:
                 lines.append(str(payload))
             lines.append("")
 
-        with open(out_path, "w") as f:
+        with open(out_txt_path, "w") as f:
             f.write("\n".join(lines))
+
+        # Also mirror the raw JSONL session into the jsonl subfolder so we keep
+        # a structured archive alongside the human-readable export.
+        try:
+            shutil.copy2(session_file, out_jsonl_path)
+        except OSError:
+            # If copying fails, we still count the session as written because
+            # the txt export succeeded; JSONL mirroring is best-effort.
+            pass
 
         written += 1
 
@@ -148,8 +169,11 @@ def export_sessions(seen_files=None) -> int:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Export Codex CLI / ChatGPT sessions from ~/.codex/sessions "
-        "into human-readable text files under ~/Documents/_____db/chatgpt.",
+        description=(
+            "Export Codex CLI / ChatGPT sessions from ~/.codex/sessions into "
+            "human-readable text files under ~/Documents/_____db/chatgpt/txt "
+            "and mirrored JSONL files under ~/Documents/_____db/chatgpt/jsonl."
+        ),
     )
     parser.add_argument(
         "--watch",
@@ -166,7 +190,10 @@ def main():
 
     if not args.watch:
         written = export_sessions()
-        print(f"Export complete. Files in: {DEST} (sessions written: {written})")
+        print(
+            f"Export complete. Text files in: {DEST_TXT}, "
+            f"JSONL copies in: {DEST_JSONL} (sessions written: {written})"
+        )
         print(
             "Note: these exports may contain sensitive data. "
             "Handle and back them up in line with your own privacy, security, "
@@ -177,7 +204,8 @@ def main():
     interval = max(1, args.interval)
     print(
         f"[backup_chatgpt] Watching {SRC} every {interval} seconds. "
-        f"Writing exports to {DEST}. Press Ctrl+C to stop."
+        f"Writing text exports to {DEST_TXT} and JSONL copies to {DEST_JSONL}. "
+        f"Press Ctrl+C to stop."
     )
     seen_files = {}
 
